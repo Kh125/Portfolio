@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link rel="stylesheet" href="/tailwind.css">
+    <title>Khant Hmuu</title>
+</head>
+<body class="dark">
+    
+    <!-- Arrow -->
+    <a id="arrowBtn" class="hidden cursor-pointer">
+        <div class="fixed arrowBtn right-12 bottom-24 flex items-center justify-center w-11 h-14 rounded-sm shadow-md">
+            <i class="material-icons">arrow_upward</i>
+        </div>
+    </a>
+    <!-- Arrow -->
+    
+    <!-- SideBar -->
+    <div id="sidebar" class="w-[230px] min-h-screen md:hidden fixed -right-[230px] transition duration-150 z-50">
+        <i id="close-btn" class="material-icons cursor-pointer top-9 right-9 absolute hover:shadow-md">clear</i>
+        <div class="px-10 py-10">
+            <ul class="mx-auto flex flex-col items-center justify-center uppercase">
+                <li class="my-3 nav-link z-[1]">
+                    <a href="#">Home</a>
+                </li>
+                <li class="my-3 nav-link z-[1]">
+                    <a href="#about">About</a>
+                </li>
+                <li class="my-3 nav-link z-[1]">
+                    <a href="#skill">Skills</a>
+                </li>
+                <li class="my-3 nav-link z-[1]">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="my-3 nav-link z-[1]">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- SideBar -->
+
+    <!-- Header -->
+    <header id="header" class="px-8 py-8 md:px-36 md:py-16">
+        <div class="flex items-center justify-between">
+            <div class="logo">
+                <a href="/" class="text-textSecondaryColor font-bold text-3xl hidden md:block">Khant Hmuu</a>
+                <li class="link md:hidden">
+                    <i onclick="toggleMode()" class="toggle-mode material-icons flex items-center justify-center
+                    w-10 h-10 rounded-full bg-white text-primaryColor
+                    rotate-45 cursor-pointer text-md">brightness_2</i>
+                </li>
+            </div>
+            <div class="nav-links ">
+                <div class="block md:hidden">
+                    <i class="menu-icon material-icons cursor-pointer text-3xl">menu</i>                                    
+                </div>
+                <ul class="md:items-center hidden md:flex uppercase">
+                    <li class="link mr-10 nav-link">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="link mr-10 nav-link">
+                        <a href="#about">About me</a>
+                    </li>
+                    <li class="link mr-10 nav-link">
+                        <a href="#skill">Skills</a>
+                    </li>
+                    <li class="link mr-10 nav-link">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="link mr-10 nav-link">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="link">
+                        <i onclick="toggleMode()" id="toggle-btn" class="toggle-mode material-icons flex items-center justify-center
+                        w-10 h-10 rounded-full bg-white text-primaryColor
+                        rotate-45 cursor-pointer text-md">brightness_2</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Hero-Section -->
+    <main id="home" class="px-8 py-8 md:px-36 md:py-16 min-h-[600px]">
+        <div class="hero-section">
+            <div class="greet mt-24">
+                <h4 class="text-8xl font-bold text-textSecondaryColor">I'm Khant Hmuu.</h4>
+                <h4 class="mt-2 text-2xl text-color">A full-stack <span class="text-textSecondaryColor underline decoration-wavy underline-offset-8">Web Developer</span> from Burma.</h4>
+            </div>
+            <div class="cv mt-12">
+                <a href="https://github.com/Kh125/cv/raw/main/Khant%20Hmuu%20Web%20Developer%20Role.pdf" class="border-color rounded-md cv-btn px-4 py-2 font-semibold">Download CV</a>
+            </div>
+        </div>
+    </main>
+    <!-- Hero-Section -->
+
+    <!-- About Me Section -->
+    <!--    232528 08090A-->
+    <div id="about" class="px-8 py-8 md:px-36 md:py-16 secondary">
+        <h4 class="text-textSecondaryColor text-2xl font-semibold">- About me -</h4>
+        <p class="text-color indent-6 text-lg mt-12 md:max-w-[600px] tracking-wide leading-loose">
+            I've been learning web development started from 2018, trying 
+            different kinds of technologies and working on a variety of academic 
+            projects. Familiar with both front-end and back-end tech stacks.
+        </p>
+        <p class="text-color indent-6 text-lg mt-2 md:max-w-[600px] tracking-wide leading-loose">
+            I am always open to challenges and constructive feedback. I am open-minded and learn new things quickly.
+        </p>
+        <p class="text-color indent-6 text-lg mt-2 md:max-w-[600px] tracking-wide leading-loose">
+            I am passionate about creating fast, secure, light-weight full-featured web applications. 
+            I dedicate my knowledge and skills to develop high-quality products.            
+        </p>
+    </div>
+    <!-- About Me Section -->    
+
+    <!-- Tech stacks -->
+    <!--    232528 08090A-->
+    <div id="skill" class="px-8 py-8 md:px-36 md:py-16">
+        <h4 class="text-textSecondaryColor text-2xl font-semibold">- Techs I'm familiar with -</h4>
+        <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 
+        xl:grid-cols-5 lg:gap-3 xl:gap-6 justify-items-center lg:justify-items-start">
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/laravel.png" alt="" class="my-10 img-tech">                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/node.png" alt="" class="my-10 img-tech">                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/vue.png" alt="" class="my-10 img-tech">                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/php.png" alt="" class="my-10 img-tech">                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/js.png" alt="" class="my-10 img-tech -z-50">                    
+            </div>            
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/bootstrap.png" alt="" class="my-10 img-tech">                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200 flex items-center justify-center">
+                <img src="/img/tailwind.png" alt="tailwind" class="my-10 img-tech" style="width: 60px;height: 40px;">                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/mysql.png" alt="" class="my-10 img-tech">                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/mongodb.png" alt="" class="my-10 img-tech">                    
+            </div>                        
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/firebase.png" alt="" class="my-10 img-tech">                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/vscode.png" alt="" class="my-10 img-tech">                                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/git.png" alt="" class="my-10 img-tech">                                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/npm.png" alt="" class="my-10 img-tech">                    
+            </div>
+            <div class="hover:opacity-70 transition duration-200">
+                <img src="/img/yarn.png" alt="" class="my-10 img-tech">                    
+            </div>
+        </div>
+    </div>
+    <!-- Tech stacks -->
+
+    <!-- Portfolio -->
+    <!--    232528 08090A-->
+    <div id="portfolio" class="px-8 py-8 md:px-36 md:py-16 secondary">
+        <h4 class="text-textSecondaryColor text-2xl font-semibold">- Portfolio -</h4>
+        <div class="mt-12 portfolio-box grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+            <!-- <div class="portfolio-card max-w-[280px] portfolio-el my-4">
+                <div class="card-img">
+                    <img src="${ portfolio.img }" alt="book renting">
+                </div>
+                <div class="card-content py-4 px-2">
+                    <h4 class="font-semibold text-sm">${ portfolio.name }</h4>
+                    <p class="font-bold text-gray-500 mt-1">${ portfolio.tech }</p>
+                </div>
+                <div class="card-btn px-2 mb-4">
+                    ${ portfolio.github ? `<a target="_blank" href="${ portfolio.github }" class="px-5 py-1">More</a>` : `<a class="px-5 py-1">No Info</a>` }
+                </div>                
+            </div>             -->
+        </div>
+    </div>
+    <!-- Portfolio -->
+
+    <!-- Contact -->
+    <!--    232528 08090A-->
+    <div id="contact" class="px-8 py-8 md:px-36 md:py-16">
+        <h4 class="text-textSecondaryColor text-2xl font-semibold">- Get in Touch -</h4>
+        <div class="mt-16 contact-box grid grid-cols-1 md:grid-cols-2">
+            <div class="social-media flex flex-col items-start justify-start text-color">                
+                <div class="github flex items-center justify-start mt-7">
+                    <img src="img/mail1.png" alt="github" class="w-9 h-9 mr-6">
+                    <a class="hover:underline" href="mailto:">khantm2596@gmail.com</a>
+                </div>
+                <div class="github flex items-center justify-start mt-7">
+                    <img src="img/phone.png" alt="github" class="w-9 h-9 mr-6">
+                    <a class="hover:underline">+959452305209</a>
+                </div>
+                <div class="github flex items-center justify-start mt-7">
+                    <img src="img/icons8-github-50.png" alt="github" class="w-9 h-9 mr-6">
+                    <a class="hover:underline" href="https://github.com/Kh125">@kh125</a>
+                </div>
+                <div class="github flex items-center justify-start mt-7">
+                    <img src="img/icons8-linkedin-circled-50.png" alt="github" class="w-9 h-9 mr-6">
+                    <a class="hover:underline" href="https://www.linkedin.com/in/khanthmuu/">@khanthmuu</a>
+                </div>
+            </div>
+            <div class="mail-box text-primaryColor mt-12 md:mt-0">
+                <form onsubmit="checkForm(event)" action="https://formspree.io/f/moqrdkwe" method="POST">
+                    <input type="text" id="name" name="name" class="input-el w-full outline-none px-3 py-2 rounded-sm mb-3" placeholder="Name" value="">
+                    <input type="email" id="email" name="email" class="input-el w-full outline-none px-3 py-2 rounded-sm mb-3" placeholder="Email" value="">
+                    <textarea id="message" name="message" cols="30" rows="5" class="input-el w-full 
+                    resize-none rounded-sm mb-3 px-3 py-2 outline-none" placeholder="Message" value=""></textarea>
+                    <input type="submit" value="Send" class="button-color rounded-sm px-5 py-2">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+
+    <!-- Footer -->
+    <div id="footer" class="secondary px-8 py-8 md:px-36 md:py-8 -z-50 text-center">
+        2022 &copy; Khant Hmuu. All rights reserved.
+    </div>
+    <!-- Footer -->
+
+    <script src="./main.js"></script>
+</body>
+</html>

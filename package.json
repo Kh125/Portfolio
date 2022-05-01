@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./index.css -o ./tailwind.css -w"
+  },
+  "author": "Khant Hmuu",
+  "license": "ISC"
+}
