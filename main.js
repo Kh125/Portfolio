@@ -8,37 +8,37 @@ const toggleBtn = document.querySelectorAll('.toggle-mode');
 
 const portfolioData = [
     {
-        img: '/img/book renting.png',
+        img: 'img/book renting.png',
         name: 'Book Renting System',
         tech: 'laravel, tailwind, javascript',
         github: 'https://github.com/Kh125/book_renting_system',
     },
     {
-        img: '/img/bookInfo.png',
+        img: 'img/bookInfo.png',
         name: 'Book Info',
         tech: 'laravel, tailwind, jquery',
         github: 'https://github.com/Kh125/bookInfo',
     },
     {
-        img: '/img/movieInfo.png',
+        img: 'img/movieInfo.png',
         name: 'MovieForU',
         tech: 'laravel, tailwind, livewire',
         github: 'http://floating-cove-95883.herokuapp.com/',
     },
     {
-        img: '/img/covidInfo.png',
+        img: 'img/covidInfo.png',
         name: 'Covid 19 Dashboard',
         tech: 'flask, bootstrap',
         github: 'https://github.com/Kh125/Covid-19',
     },
     {
-        img: '/img/nothing.png',
+        img: 'img/nothing.png',
         name: 'Ferry Management System',
         tech: 'php, javascript, mysql',
         github: 'https://github.com/Kh125/Ferry-Management-System-Third-Yr',
     },
     {
-        img: '/img/nothing.png',
+        img: 'img/nothing.png',
         name: 'GameDev',
         tech: 'php, javascript, mysql',
         github: '',
