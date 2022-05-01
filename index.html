@@ -6,7 +6,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/index.css">
+    <!-- <link rel="stylesheet" href="/index.css"> -->
+    <style>
+        *,
+        *:root,
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .toggle-mode:hover{
+            box-shadow: 2px 1px 12px 0px rgba(255,255,255,0.75);    
+            transition: .3s;
+        }
+
+        .link{
+            display: inline-block;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .nav-link{
+            position: relative;
+            transition: .3s;
+        }
+
+        .nav-link:hover{
+            /* color: aqua; */
+        }
+
+        .nav-link::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        background-color: rgb(94, 203, 207);
+        height: 12px;
+        bottom: -2px;
+        left: -5px;
+        border-radius: 5px;
+        z-index: -1;
+        opacity: 0;
+        transition: .3s;
+        }
+
+        .nav-link:hover::after{
+            opacity: 1;
+            width: 100%;   
+        }
+
+        .cv-btn{
+            position: relative;
+        }
+
+        .cv-btn::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            opacity: 0;
+            background-color: #2FE6DE;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: .3s;
+            border-radius: 5px;
+        }
+
+        .cv-btn:hover::after{
+            width: 100%;
+            opacity: 1;
+        }
+
+        .img-tech{
+            /* width: 70px; */
+            height: 70px;
+        }
+
+        .portfolio-el a {
+            background-color: #171123;
+            color: #FBFBFF;
+            border: 1px solid white;
+            transition: .4s;
+        }
+
+        .portfolio-el a:hover {
+            background-color: #fff;
+            border: 1px solid #171123;
+            color: #171123;
+            transition: .4s;
+        }
+
+        .dark {
+            background-color: #202030;
+            color: #fff;
+        }
+
+        .dark .secondary {
+            background-color: #171123;
+            color: #fff;
+        }
+
+        .dark .text-color {
+            color: #fff;
+        }
+
+        .dark .button-color {
+            background-color: #fff;
+            color: #202030;
+            transition: .3s;
+        }
+
+
+        .dark .button-color:hover {
+            background-color: rgb(235, 230, 230);
+            transition: .3s;
+        }
+
+        .dark .border-color {
+            border: 1px solid white;
+        }
+
+        .dark .portfolio-el {
+            background-color: #202030;
+        }
+
+        .dark #sidebar {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+        }
+
+        .dark .arrowBtn {
+            background-color: #FBFBFF;
+            color: #202030;
+            transition: .4s;
+            z-index: 30;
+        }
+
+        .dark .arrowBtn:hover {
+            box-shadow: 0px 0px 5px 1px rgba(226,212,212,0.75);
+            transition: .4s;
+        }
+
+        /* F1F2F6 */
+        .light {
+            background-color: #FBFBFF;
+            color: #202030;
+        }
+
+        /* f2f2f2ce */
+        .light .secondary {
+            background-color: #edececce;
+            color: #202030;
+        }
+
+        .light .text-color {
+            color: #202030;
+        }
+
+        .light .button-color {
+            background-color: #202030;
+            color: #fff;
+            transition: .3s;
+        }
+
+        .light .button-color:hover {
+            background-color: rgb(46, 49, 47);
+            transition: .3s;
+        }
+
+        .light .border-color {
+            border: 1px solid #202030;
+        }
+
+        .light .input-el {
+            border: 1px solid #202030;
+            border-radius: 3px;
+        }
+
+        .light .toggle-mode {
+            background-color: #202030;
+            color: #fff;
+        }
+
+        .light .portfolio-el{
+            background-color: #FBFBFF;
+        }
+
+        /* .light .portfolio-el a {
+            background-color: #edececce;
+            color: #202030;    
+            transition: .4s;
+        } */
+
+        /* .light .portfolio-el a:hover {
+            background-color: #202030;
+            border: 1px solid #fff;
+            color: #fff;
+            transition: .4s;
+        } */
+
+        .light .menu-icon {
+            color: #202030;
+        }
+
+        .light #sidebar {
+            background-color: #edececce;
+            color: #202030;
+        }
+
+        .light .arrowBtn {
+            background-color: #171123;
+            color: #fff;
+            transition: .4s;
+            z-index: 30;
+        }
+
+        .light .arrowBtn:hover {
+            box-shadow: 0px 0px 5px 1px rgba(20, 19, 19, 0.75);
+            transition: .4s;
+        }
+    </style>
     <title>Khant Hmuu</title>
 </head>
 <body class="dark">
